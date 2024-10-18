@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - Apex Sports Academy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <img src="images/logo.png" alt="Apex Sports Academy Logo" class="logo" style="max-height: 50px;">
+            <nav>
+                <ul style="list-style: none; display: flex; margin: 0; padding: 0;">
+                    <li style="margin-left: 20px;"><a href="index.html" style="color: #fff; text-decoration: none; font-weight: 700; transition: color 0.3s;">Home</a></li>
+                    <li style="margin-left: 20px;"><a href="about.html" style="color: #fff; text-decoration: none; font-weight: 700; transition: color 0.3s;">About</a></li>
+                    <li style="margin-left: 20px;"><a href="programs.html" style="color: #fff; text-decoration: none; font-weight: 700; transition: color 0.3s;">Program</a></li>
+                    <li style="margin-left: 20px;"><a href="trainers.html" style="color: #fff; text-decoration: none; font-weight: 700; transition: color 0.3s;">Trainers</a></li>
+                    <li style="margin-left: 20px;"><a href="gear.html" style="color: #fff; text-decoration: none; font-weight: 700; transition: color 0.3s;">Gear</a></li>
+                    <li style="margin-left: 20px;"><a href="order.html" style="color: #fff; text-decoration: none; font-weight: 700; transition: color 0.3s;">Order</a></li>
+                    <li style="margin-left: 20px;"><a href="signin.html" style="color: #fff; text-decoration: none; font-weight: 700; transition: color 0.3s;">Sign in</a></li>
+                    <!-- Add other navigation items similarly -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Programs Section -->
+    <section id="programs" class="container">
+        <h2>Our Programs</h2>
+        <p>At Apex Sports Academy, we offer a wide range of programs tailored to different skill levels and age groups:</p>
+
+        <div class="program-grid">
+            <div class="program-card">
+                <i class="fas fa-child"></i>
+                <h3>Beginner Programs</h3>
+                <p>Introduction to sports and basic training for young athletes.</p>
+            </div>
+            <div class="program-card">
+                <i class="fas fa-running"></i>
+                <h3>Intermediate Programs</h3>
+                <p>Advanced training techniques and skill development.</p>
+            </div>
+            <div class="program-card">
+                <i class="fas fa-trophy"></i>
+                <h3>Elite Athlete Development</h3>
+                <p>Specialized programs for professional athletes.</p>
+            </div>
+            <div class="program-card">
+                <i class="fas fa-flask"></i>
+                <h3>Sports Science Integration</h3>
+                <p>Utilizing the latest technology to enhance performance.</p>
+            </div>
+            <div class="program-card">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Recovery Management</h3>
+                <p>Programs focused on injury prevention and recovery.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Contact us: info@apexsportsacademy.com | Follow us on social media</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6b6b;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .program-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .program-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .program-card i {
+            font-size: 2.5em;
+            color: #ff6b6b;
+            margin-bottom: 10px;
+        }
+
+        .program-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .program-card p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer .social-media {
+            margin-top: 10px;
+        }
+
+        footer .social-media a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        footer .social-media a:hover {
+            color: #ff6b6b;
+        }
+    </style>
+</body>
+</html>
